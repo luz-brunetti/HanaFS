@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 0.5fr 2fr 0.5fr;
+    grid-template-areas: 
+        "header header header"
+        "navbar navbar navbar"
+        "main main main"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+
+.logo-img{
+    width: 425px;
+}
+
+.navbar {
+    grid-area: navbar;
+    width: 100%;
+    border-top: solid #b8b8b8 2px;
+    border-bottom: solid #b8b8b8 2px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    padding: 5px 0px;
+    font-weight: 500;
+}
+
+a:any-link{
+    text-decoration: none;
+    color: black;
+}
+
+.link a:hover{
+    color: darkolivegreen;
+}
+
+.main {
+    grid-area: main;
+}
+
+.banner{
+    min-width: 300px;
+    width: 100%;
+}
+
+.section-titulo{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    margin: 5px 0px;
+    padding: 15px 20px 0px 20px;
+}
+
+.event-text{
+    color: #3f3f3f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    width: 70%;
+    margin: 2rem auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.product-text{
+    color: #3f3f3f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: darkolivegreen;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-description{
+    color: #3f3f3f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.section-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+    border: solid #b8b8b8 2px;
+    padding: 10px 5px;
+    border-radius: 8%;
+    width: 340px;
+}
+
+card-title{
+    font-size: 25px;
+}
+
+.card-image img{
+    width: 290px;
+    border-radius: 15%;
+    padding: 15px 0px;
+}
+
+.card-content{
+    text-align: center;
+    padding: 0px 18px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.section-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+fieldset{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: solid 4px #d2d2e0;
+    padding: 35px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+textarea, input, select, option{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.buttonForm{
+    border: solid 2px #d2d2e0;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.buttonForm:hover{
+    background-color: #d2d2e0;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:#3f3f3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 8rem;
+    padding: 10px;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    width: 100%;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .section-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section-titulo{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    .section-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    ul{
+        font-size: 22px;
+        font-weight: 600px;
+    }
+
+    .section-titulo{
+        font-size: 30px;
+    }
+    
+    .logo-img{
+        width: 525px;
+    }
+}
