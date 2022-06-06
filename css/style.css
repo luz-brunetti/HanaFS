@@ -48,17 +48,41 @@ ul{
     align-items: center;
     justify-content: space-evenly;
     font-size: 15px;
-    padding: 5px 0px;
+    padding: 10px 0px;
     font-weight: 500;
+    margin: 5px
+}
+
+li > a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: #93af84;
+    font-size: 20px;
+}
+
+li > a:hover{
+    color: #93af84
 }
 
 a:any-link{
     text-decoration: none;
     color: black;
-}
-
-.link a:hover{
-    color: darkolivegreen;
 }
 
 .main {
@@ -80,6 +104,7 @@ a:any-link{
     margin: 5px 0px;
     padding: 15px 20px 0px 20px;
 }
+
 
 .event-text{
     color: #3f3f3f;
@@ -129,6 +154,9 @@ a:any-link{
     width: 340px;
 }
 
+.card:hover{
+    border: solid olive 2px;
+}
 card-title{
     font-size: 25px;
 }
@@ -217,7 +245,6 @@ textarea, input, select, option{
     .section-titulo{
         font-size: 25px;
     }
-
 }
 
 @media screen and (min-width:1440px) {
