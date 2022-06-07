@@ -26,10 +26,10 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: white;
-    position: sticky;
+    position: relative;
     top: 0;
+    width: 100%;
 }
-
 
 .logo-img{
     width: 425px;
@@ -105,6 +105,37 @@ a:any-link{
     padding: 15px 20px 0px 20px;
 }
 
+.text-focus-in{
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/*animation text-focus-in */
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
 
 .event-text{
     color: #3f3f3f;
@@ -165,6 +196,18 @@ card-title{
     width: 290px;
     border-radius: 15%;
     padding: 15px 0px;
+}
+
+.fade:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.reducir:hover{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    cursor: pointer;
 }
 
 .card-content{
