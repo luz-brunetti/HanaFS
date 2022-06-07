@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,10 +86,16 @@
         </section>
     </main>
     <!--pie de página-->
-    <footer class="footer"><img class="footer-logo" src="./assets/logoonly.png" alt="Logo Hana Flower Shop">
+    <footer class="footer">
+        <div data-aos="zoom-in">
+            <img class="footer-logo" src="./assets/logoonly.png" alt="Logo Hana Flower Shop">
+        </div>
         <span class="footer-info">
-            <p>HANA FLOWER SHOP © 2022 | Email: HanaFS@gmail.com </p>
+            <p>HANA FLOWER SHOP © 2022 | Email: HanaFS@gmail.com</p>
         </span>
     </footer>
     </div>
+<script>
+AOS.init();
+</script>
 </body>
