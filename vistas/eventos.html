@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
@@ -12,49 +13,61 @@
     <title>Hana Flower Shop | Eventos</title>
 </head>
 <body>
-    <div id="grid-container">
         <!--header y nav-->
         <header class="header">
-            <div class="logo">
-                <a href="../index.html"><img class="logo-img" src="../assets/althana.png" alt=""></a>
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../vistas/productos.html">PRODUCTOS</a></li>
-                    <li><a href="../vistas/eventos.html">EVENTOS</a></li>
-                    <li><a href="../vistas/empresa.html">EMPRESA</a></li>
-                    <li><a href="../vistas/contacto.html">CONTACTO</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-md ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/althana.png" alt="" width="325">
+                    </a>
+                    <button class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./eventos.html">EVENTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./empresa.html">EMPRESA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <!--Cuerpo de la página-->
         <main class="main">
-            <section class="section-uno">
-                <img class="banner" src="../assets/eventbanner.png" alt="">
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="banner" src="../assets/eventbanner.png" alt="">
+                    </div>
+                </div>
             </section>
-            <h1 class="section-titulo text-focus-in">Hana está con vos en todos los momentos especiales de tu vida</h1>
-            <p class="event-text">Nos especializamos en hacer el día mas mágico de tu vida un momento inolvidable. Nustros profesionales
-                diseñan hasta el más mínimo detalle du boda, desde decoración de mesas y ambientes, hasta el ramo de la
-                novia. Ya sea una boda de interior u exterior, el resultado es siempre perfecto.</p>
-            <section class="section-cards">
-                    <div class="card fade">
-                        <div class="card-image">
-                            <img src="../assets/wedding.png" alt="Arreglo floral de mesa para casamiento">
+            <section class="container">
+                <h1 class="section-titulo text-focus-in">Hana está con vos en todos los momentos especiales de tu vida</h1>
+                <p class="event-text text-focus-in">Nos especializamos en hacer el día mas mágico de tu vida un momento inolvidable. Nustros profesionales
+                    diseñan hasta el más mínimo detalle tu boda, desde decoración de mesas y ambientes, hasta el ramo de la
+                    novia. Ya sea una boda de interior u exterior, el resultado es siempre perfecto.</p>
+                <div class="row cards-eventos">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 fadehover">
+                            <img src="../assets/weddingact.png" class="card-img" alt="...">
                         </div>
                     </div>
-                <div class="card fade">
-                    <div class="card-image">
-                        <img src="../assets/wed1.jpg" alt="Arreglo florar de mesa para casamiento">
-                    </div>
-                </div>
-                <div class="card fade">
-                    <div class="card-image">
-                        <img src="../assets/eventbouquet.jpg" alt="Arreglo florar de mesa para casamiento">
-                    </div>
-                </div>
-                <div class="card fade">
-                    <div class="card-image">
-                        <img src="../assets/floordeco.jpg" alt="Arreglo florar de mesa para casamiento">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 fadehover">
+                            <img src="../assets/wed1.jpg" class="card-img" alt="...">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -72,5 +85,8 @@
 <script>
 AOS.init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
 </body>
 </html>

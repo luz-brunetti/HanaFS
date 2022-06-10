@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
@@ -12,72 +13,48 @@
     <title>Hana Flower Shop | Contacto </title>
 </head>
 <body>
-    <body>
-        <div id="grid-container">
-            <!--header y nav-->
-        <header class="header">
-            <div class="logo">
-            <a href="../index.html"><img class="logo-img" src="../assets/althana.png" alt=""></a>
+    <header class="header">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/althana.png" alt="" width="325">
+                </a>
+                <button class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./eventos.html">EVENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./empresa.html">EMPRESA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li ><a href="../vistas/productos.html">PRODUCTOS</a></li>
-                    <li ><a href="../vistas/eventos.html">EVENTOS</a></li>
-                    <li ><a href="../vistas/empresa.html">EMPRESA</a></li>
-                    <li ><a href="../vistas/contacto.html">CONTACTO</a></li>
-                </ul>
         </nav>
     </header>
     <!--Cuerpo de la página-->
     <main class="main">
-        <section>
-        <div class="section-formulario">
-            <h1 class="section-titulo">¿Tenés alguna duda? Mandanos tu consulta y nos pondremos en contacto contigo.</h1>
-        <div>
-            <form action="" method="get" enctype="text/plain">
-            <fieldset style="width: 400px; height: 600px;">
-            <legend><b>DATOS PERSONALES</b></legend>
-        <div>
-            <label for="userName">Nombre</label>
-            <input type="text" id="userName" name="userName" placeholder="Nombre" required>
-        </div>
-    <br>
-        <div class="formulario" >
-            <label for="userName">Apellido</label>
-            <input type="text" id="userName" name="userName" placeholder="Apellido" required>
-        </div>
-    <br>
-        <div>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="E-mail" required>
-        </div>
-    <br>
-        <div>
-            <label for="genero">Género</label>
-                <select name="genero" id="genero">
-                    <option value="masculino" label="Masculino"></option>
-                    <option value= femenino" label="Femenino"></option>
-                    <option value="NoBinario" label="No Binario"></option>
-                </select>
-            </div>
-        <br>
-            <div><label for="consulta">Tu Consulta</label></div>
-                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Deje aquí su consulta"></textarea>
-            <br>
-            <div>
-                <label for="newsletter">¿Desea recibir el Newsletter? </label>
-                <input type= "checkbox" id="newsletter" name="newsletter">
-            </div> 
-        <br>
-            <div>
-                <input class="buttonForm" type="submit" name="Enviar" value="Enviar">
-                <input class="buttonForm" type="reset" name="Borrar" value="Borrar">
-            </div>
-            </fieldset>
-            </form>
+        <div class="container-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="powr-form-builder" id="c9341902_1654801187"></div>
+                </div><div class="col-md-6">
+                    <div class="powr-map" id="c181e0e9_1654811518">
+                </div>
             </div>
         </div>
-        </section>
+
     </main>
     <!--pie de página-->
     <footer class="footer">
@@ -92,5 +69,9 @@
 <script>
 AOS.init();
 </script>
+<script src="https://www.powr.io/powr.js?platform=html"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
 </body>
 </html>

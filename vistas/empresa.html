@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
@@ -14,66 +15,76 @@
     <title>Hana Flower Shop | Empresa</title>
 </head>
 <body>
-    <div id="grid-container">
     <!--header y nav-->
     <header class="header">
-        <div class="logo">
-            <a href="../index.html"><img class="logo-img" src="../assets/althana.png" alt=""></a>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./productos.html"">PRODUCTOS</a></li>
-                <li><a href="./eventos.html">EVENTOS</a></li>
-                <li><a href="./empresa.html">EMPRESA</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/althana.png" alt="" width="325">
+                </a>
+                <button class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./eventos.html">EVENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./empresa.html">EMPRESA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!--Cuerpo de la página-->
     <main class="main">
-        <h1 class="section-titulo">¿Quienes Somos?</h1>
         <section>
-            <article class="section-cards">
-                <!--card información empresa-->
-                <div class="card">
-                    <div class="card-title">
-                        <h3>NUESTRO LOCAL</h3>
+            <div class="container">
+                <h1 class="section-titulo">¿Quienes Somos?</h1>
+                <div class="row">
+                    <div class="col-md-12 col-lg-4 mb-3">
+                        <div class="card h-100 text-focus-in shadow p-3 mb-5 bg-body rounded">
+                            <img src="../assets/hanashopem.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Nuestra Tienda</h5>
+                                <p class="card-text">Ubicado en el corazón de la ciudad, Hana Flower Shop te ofrece un mundo de opciones para
+                                    que llenes de magia tu vida. Sistema de Pick-Up en local y delivery, estés donde estés.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-image">
-                        <img src="../assets/hanashopem.png" alt="Local de Hana Flower Shop">
+                    <div class="col-md-12 col-lg-4 mb-3">
+                        <div class="card h-100 text-focus-in shadow p-3 mb-5 bg-body rounded">
+                            <img src="../assets/flowerharvest.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Compromiso eco</h5>
+                                <p class="card-text">En Hana nos precupa el futuro de nuestro planeta, por eso sólo cultivamos
+                                    y vendemos flores aptas para cada clima y bioma, evitando así gastos de recursos y agua.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <span>Ubicado en el corazón de la ciudad, Hana Flower Shop te ofrece un mundo de opciones para
-                            que llenes de
-                            magia tu vida. Sistema de Pick-Up en local y delivery, estés donde estés.</span>
+                    <div class="col-md-12 col-lg-4 mb-3">
+                        <div class="card h-100 text-focus-in shadow p-3 mb-5 bg-body rounded">
+                            <img src="../assets/floristwork.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Nuestra familia</h5>
+                                <p class="card-text">Formado con los mejores profesionales de área, Hana no solo brinda un resultado estético
+                                    perfecto, si no también durabilidad, calidad y compromiso con nuestro medioambiente.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--card de compromiso ECO-->
-                <div class="card">
-                    <div class="card-title">
-                        <h3>COMPROMISO ECO</h3>
-                    </div>
-                    <div class="card-image">
-                        <img src="../assets/flowerharvest.jpg" alt="Local de Hana Flower Shop">
-                    </div>
-                    <div class="card-content">
-                        <span>En Hana nos precupa el futuro de nuestro planeta, por eso sólo cultivamos
-                            y vendemos flores aptas para cada clima y bioma, evitando así gastos de recursos y agua.</span>
-                    </div>
-                </div>
-                <!--card de familia-->
-                <div class="card">
-                    <div class="card-title">
-                        <h3>NUESTRA FAMILIA</h3>
-                    </div>
-                    <div class="card-image">
-                        <img src="../assets/floristwork.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <span>Formado con los mejores profesionales de área, Hana no solo brinda un resultado estético
-                            perfecto, si no también durabilidad, calidad y compromiso con nuestro medioambiente.</span>
-                    </div>
-            </article>
+            </div>
+
         </section>
     </main>
     <!--Pie de página-->
@@ -89,5 +100,8 @@
 <script>
 AOS.init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
 </body>
 </html>

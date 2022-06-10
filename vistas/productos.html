@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
@@ -12,169 +13,150 @@
     <title>Hana Flower Shop | Productos</title>
 </head>
 <body>
-    <div id="grid-container">
         <!--header y nav-->
-    <header class="header">
-        <div class="logo">
-        <a href="../index.html"><img class="logo-img" src="../assets/althana.png" alt=""></a>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../vistas/productos.html">PRODUCTOS</a></li>
-                <li><a href="../vistas/eventos.html">EVENTOS</a></li>
-                <li><a href="../vistas/empresa.html">EMPRESA</a></li>
-                <li><a href="../vistas/contacto.html">CONTACTO</a></li>
-            </ul>
-    </nav>
-</header>
+        <header class="header">
+            <nav class="navbar navbar-expand-md ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/althana.png" alt="" width="325">
+                    </a>
+                    <button class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./eventos.html">EVENTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./empresa.html">EMPRESA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <!--Cuerpo de la página-->
 <main class="main">
-    <h1 class="section-titulo">Nuestros Productos</h1>
-    <section>
-        <h4 class="product-text">Best Sellers</h4>
-        <article class="section-cards">
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/product1.png" alt="Arreglo floral simple en jarrón">
-                </div>
-                <div class="product-description">
-                    <span>Elegant Jar Mix</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
-            </div>
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/product3.jpg" alt="Dracaena Trifasciata en maceta blanca">
-                </div>
-                <div class="product-description">
-                    <span>Dracaena in a Pot</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
-            </div>
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/product5.jpg" alt="Ramo San Valentín">
-                </div>
-                <div class="product-description">
-                    <span>Sweet Valentine</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
-            </div>            
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/product6.jpg" alt="Suculenta en maceta rectangular blanca">
-                </div>
-                <div class="product-description">
-                    <span>Suculent in a Pot</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
-            </div>
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/product2.jpg" alt="Arreglo floral colorido en jarrón">
-                </div>
-                <div class="product-description">
-                    <span>Starlight Mix</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
-            </div>
-        </article>
-            <h4 class="product-text">Para el hogar</h4>
-        <article class="section-cards">
-                <div class="card reducir">
-                    <div class="card-image">
-                        <img src="../assets/houseplant1.jpg" alt="Arbol Lira en maceta blaca">
+    <h1 class="section-titulo text-focus-in">Nuestros Productos</h1>
+    <section class="container">
+        <h3 class="section-subtitulo">Best Sellers</h3>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/product1.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Jar Mix</h5>
                     </div>
-                    <div class="product-description">
-                        <span>Lira tree in a Pot</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/product3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dracaena in a Pot</h5>
                     </div>
-                    <button class="buttonForm" type="button">ver más</button>
-                </div>            
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/houseplant2.webp" alt="Calathea en maceta de mimbre">
                 </div>
-                <div class="product-description">
-                    <span>Calathea Mimbre</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
             </div>            
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/houseplant5.webp" alt="Anturio rojo en maceta blanca">
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/product5.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweet Valentine</h5>
+                    </div>
                 </div>
-                <div class="product-description">
-                    <span>Red Anthurium</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
             </div>            
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/houseplant3.jpg" alt="Aloe Vera en maceta blanca">
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/product6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Suculent in a Pot</h5>
+                    </div>
                 </div>
-                <div class="product-description">
-                    <span>Aloe in a Pot</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
-            </div>            
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/houseplant4.jpg" alt="Monstera en maceta blanca">
-                </div>
-                <div class="product-description">
-                    <span>Monstera XL</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
             </div>
-        </article>
-            <h4 class="product-text">Ramos florales</h4>
-        <article class="section-cards">
-            <div class="card reducir">
-                <div class="card-image">
-                    <img src="../assets/bouquet1.png" alt="Ramo pastel premium">
-                </div>
-                <div class="product-description">
-                    <span>Premium Mix</span>
-                </div>
-                <button class="buttonForm" type="button">ver más</button>
-            </div>            
-        <div class="card reducir">
-            <div class="card-image">
-                <img src="../assets/bouquet5.png" alt="Ramo lilac">
-            </div>
-            <div class="product-description">
-                <span>Lilac Dream</span>
-            </div>
-            <button class="buttonForm" type="button">ver más</button>
-        </div>            
-        <div class="card reducir">
-            <div class="card-image">
-                <img src="../assets/bouquet4.png" alt="Ramo sunflower">
-            </div>
-            <div class="product-description">
-                <span>Piggy Sunflower</span>
-            </div>
-            <button class="buttonForm" type="button">ver más</button>
-        </div>            
-        <div class="card reducir">
-            <div class="card-image">
-                <img src="../assets/bouquet2.png" alt="Ramo pink">
-            </div>
-            <div class="product-description">
-                <span>Pink Delight</span>
-            </div>
-            <button class="buttonForm" type="button">ver más</button>
-        </div>            
-        <div class="card reducir">
-            <div class="card-image">
-                <img src="../assets/bouquet6.png" alt="Ramo tulipanes amarillos">
-            </div>
-            <div class="product-description">
-                <span>Yellow Tulip</span>
-            </div>
-            <button class="buttonForm" type="button">ver más</button>
         </div>
-        </article>
+    </section>
+    <section class="container">
+        <h2 class="section-subtitulo">Para el Hogar</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/houseplant1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lira tree in a Pot</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/houseplant2.webp" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Calathea Mimbre</h5>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/houseplant5.webp" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Anthuriumr</h5>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/houseplant3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Aloe in a Pot</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h2 class="section-subtitulo">Ramos Florales</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/bouquet1.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Mix</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/bouquet5.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lilac Dream</h5>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/bouquet4.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Piggy Sunflowe</h5>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100 fadehover shadow p-3 mb-5 bg-body rounded">
+                    <img src="../assets/bouquet2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pink Delight</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
     <!--pie de página-->
@@ -190,5 +172,8 @@
 <script>
 AOS.init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
 </body>
 </html>

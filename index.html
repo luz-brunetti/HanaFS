@@ -1,88 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap');
+    </style>
     <title>Hana Flower Shop</title>
 </head>
 <body>
-    <div id="grid-container">
-            <!--header y nav-->
+    <!--header y nav-->
     <header class="header">
-        <div class="logo">
-        <a href="./index.html"><img class="logo-img" src="./assets/althana.png" alt=""></a>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./vistas/productos.html">PRODUCTOS</a></li>
-                <li><a href="./vistas/eventos.html">EVENTOS</a></li>
-                <li><a href="./vistas/empresa.html">EMPRESA</a></li>
-                <li><a href="./vistas/contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/althana.png" alt="" width="325">
+                </a>
+                <button class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./vistas/productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./vistas/eventos.html">EVENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./vistas/empresa.html">EMPRESA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./vistas/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-        <!--Cuerpo de la página-->
+    <!--Cuerpo de la página-->
     <main class="main">
-        <section class="section-uno">
-            <img  class="banner" src="./assets/suculentbanner.jpg" alt="">
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/chuttersnap-iQVn40PdwW0-unsplash.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/bernard-hermant-yh6kIxI0Z8g-unsplash.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/priscilla-du-preez-G9eNtqRDupM-unsplash.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="section-dos">
+        <section class="container">
             <h1 class="section-titulo text-focus-in">La mejor floristeria al alcance de un click</h1>
-            <article class="section-cards">
-                <!--card de primer best seller-->
-                <div class="card fade">
-                    <div class="card-title">
-                        <h3>INDIVIDUALES Y RAMOS</h3>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/pin2.jpg" alt="Arreglo floral en ramo">
-                    </div>
-                    <div class="card-content">
-                        <span>Regalos para toda ocasión.</span>
+            <div class="row cards-index">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
+                        <img src="./assets/pin2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Individuales y ramos</h5>
+                            <p class="card-text">Flores por unidad y ramos para toda ocasión. Arreglos 100% únicos.</p>
+                        </div>
                     </div>
                 </div>
-                <!--card de segundo best seller-->
-                <div class="card fade">
-                    <div class="card-title">
-                        <h3>PLANTAS DEL HOGAR</h3>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/pin3.jpg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <span>Llená tu casa de magia</span>
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
+                        <img src="./assets/pin3.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Plantas del Hogar</h5>
+                            <p class="card-text">Llená tu casa de magia con nuestras plantas y macetas exclusivas.</p>
+                        </div>
                     </div>
                 </div>
-                <!--card de tercer best seller-->
-                <div class="card fade">
-                    <div class="card-title">
-                        <h3>PERSONALIZADOS</h3>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/pin5.jpg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <span>Armá todo a tu gusto</span>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
+                        <img src="./assets/pin5.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"> Personalizados</h5>
+                            <p class="card-text">Tenés el control sobre todo. Cada detalle personalizado a tu gusto.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card fade">
-                    <div class="card-title">
-                        <h3>ARREGLOS PARA EVENTOS</h3>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/wedding.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <span>Asistencia para eventos</span>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
+                        <img src="./assets/wedding.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Eventos</h5>
+                            <p class="card-text">Nuestros especialistas te acompañan en cada momento.</p>
+                        </div>
                     </div>
                 </div>
-            </article>
+            </div>
         </section>
     </main>
     <!--pie de página-->
@@ -95,7 +121,10 @@
         </span>
     </footer>
     </div>
-<script>
-AOS.init();
-</script>
-</body>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>bran
