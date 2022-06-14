@@ -8,8 +8,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.logo-img{
-    width: 425px;
+/*HEADER*/
+
+.logo{
+    width: 315px;
 }
 
 .navbar {
@@ -56,6 +58,8 @@ a:any-link{
     color: black;
 }
 
+/*TITULOS Y SUBTITULOS*/
+
 .section-titulo{
     color:#93af84;
     text-align: center;
@@ -80,12 +84,22 @@ a:any-link{
     margin-bottom: 15px;
 }
 
+.event-text{
+    color: #3f3f3f;
+    font-size: 1rem;
+    line-height: 24px;
+    width: 70%;
+    margin: 2rem auto;
+    font-style: normal;
+    text-align: center;
+}
+
 .text-focus-in{
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-/*animation text-focus-in */
+/*animation text-focus-in*/
 
 @-webkit-keyframes text-focus-in {
     0% {
@@ -112,6 +126,13 @@ a:any-link{
     }
 }
 
+.fadehover:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*CARDS*/
+
 .card-title{
     text-transform: uppercase;
     letter-spacing:2px;
@@ -123,29 +144,11 @@ a:any-link{
     text-align: center;
 }
 
-.fadehover:hover{
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-.event-text{
-    color: #3f3f3f;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    line-height: 24px;
-    width: 70%;
-    margin: 2rem auto;
-    font-style: normal;
-    text-align: center;
-}
-
-.banner{
-    width: 100%;
-}
-
 .container-form{
     margin-top: 30px;
 }
+
+/*FOOTER*/
 
 .footer{
     background-color:#3f3f3f;
@@ -167,7 +170,13 @@ a:any-link{
     border-bottom: solid 1px white;
     width: 100%;
     padding: 10px 0px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+}
+
+.footer-text{
     color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }

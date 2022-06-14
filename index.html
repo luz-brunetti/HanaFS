@@ -2,7 +2,10 @@
 <html lang="es">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +16,14 @@
     </style>
     <title>Hana Flower Shop</title>
 </head>
+
 <body>
     <!--header y nav-->
     <header class="header">
         <nav class="navbar navbar-expand-md ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/althana.png" alt="" width="325">
+                    <img class="logo" src="./assets/althana.png" alt="Logo Hana Flower Shop">
                 </a>
                 <button class="navbar-toggler align-items-center" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -54,15 +58,15 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./assets/chuttersnap-iQVn40PdwW0-unsplash.jpg" class="d-block w-100"
-                                    alt="...">
+                                    alt="Ramo de flores rosadas">
                             </div>
                             <div class="carousel-item">
                                 <img src="./assets/bernard-hermant-yh6kIxI0Z8g-unsplash.jpg" class="d-block w-100"
-                                    alt="...">
+                                    alt="Suculentas en macetas">
                             </div>
                             <div class="carousel-item">
                                 <img src="./assets/priscilla-du-preez-G9eNtqRDupM-unsplash.jpg" class="d-block w-100"
-                                    alt="...">
+                                    alt="Ramo de tulipanes rosados">
                             </div>
                         </div>
                     </div>
@@ -74,7 +78,7 @@
             <div class="row cards-index">
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
-                        <img src="./assets/pin2.jpg" alt="" class="card-img-top">
+                        <img src="./assets/pin2.jpg" alt="Ramo de Flores Premium" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Individuales y ramos</h5>
                             <p class="card-text">Flores por unidad y ramos para toda ocasión. Arreglos 100% únicos.</p>
@@ -83,7 +87,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3 ">
                     <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
-                        <img src="./assets/pin3.jpg" alt="" class="card-img-top">
+                        <img src="./assets/pin3.jpg" alt="Macetas con plantas para el hogar" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Plantas del Hogar</h5>
                             <p class="card-text">Llená tu casa de magia con nuestras plantas y macetas exclusivas.</p>
@@ -92,7 +96,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
-                        <img src="./assets/pin5.jpg" alt="" class="card-img-top">
+                        <img src="./assets/pin5.jpg" alt="Ramo de Flores personalizado" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title"> Personalizados</h5>
                             <p class="card-text">Tenés el control sobre todo. Cada detalle personalizado a tu gusto.</p>
@@ -101,7 +105,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
-                        <img src="./assets/wedding.jpg" alt="" class="card-img-top">
+                        <img src="./assets/wedding.jpg" alt="Arreglo floral para mesa en eventos" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Eventos</h5>
                             <p class="card-text">Nuestros especialistas te acompañan en cada momento.</p>
@@ -116,15 +120,12 @@
         <div data-aos="zoom-in">
             <img class="footer-logo" src="./assets/logoonly.png" alt="Logo Hana Flower Shop">
         </div>
-        <span class="footer-info">
-            <p>HANA FLOWER SHOP © 2022 | Email: HanaFS@gmail.com</p>
-        </span>
+        <div class="footer-info">
+            <p class="footer-text">HANA FLOWER SHOP © 2022 | Email: HanaFS@gmail.com</p>
+        </div>
     </footer>
-    </div>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-</body>bran
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
