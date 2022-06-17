@@ -1,0 +1,42 @@
+.section__titulo{
+    color:#93af84;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.6rem;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    margin: 30px 0px;
+    padding: 15px 20px 0px 20px;
+}
+
+.section__subtitulo{
+    color:#93af84;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.6rem;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 35px; 
+    margin-bottom: 15px;
+}
+
+.section__event{
+    color: #3f3f3f;
+    font-size: 1rem;
+    line-height: 24px;
+    width: 70%;
+    margin: 2rem auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.fadehover:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.banner__event{
+    width: 100%;
+}

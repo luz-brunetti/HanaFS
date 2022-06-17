@@ -10,7 +10,7 @@ body{
 
 /*HEADER*/
 
-.logo{
+.navbar__logo{
     width: 315px;
 }
 
@@ -58,9 +58,13 @@ a:any-link{
     color: black;
 }
 
+.fadehover:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
 /*TITULOS Y SUBTITULOS*/
 
-.section-titulo{
+.section__titulo{
     color:#93af84;
     text-align: center;
     font-size: 30px;
@@ -72,7 +76,7 @@ a:any-link{
     padding: 15px 20px 0px 20px;
 }
 
-.section-subtitulo{
+.section__subtitulo{
     color:#93af84;
     text-align: center;
     font-size: 22px;
@@ -84,7 +88,7 @@ a:any-link{
     margin-bottom: 15px;
 }
 
-.event-text{
+.section__event{
     color: #3f3f3f;
     font-size: 1rem;
     line-height: 24px;
@@ -126,21 +130,17 @@ a:any-link{
     }
 }
 
-.fadehover:hover{
-    cursor: pointer;
-    opacity: 0.8;
-}
 
 /*CARDS*/
 
-.card-title{
+.card__title{
     text-transform: uppercase;
     letter-spacing:2px;
     word-spacing: 3px;
     text-align: center;
 }
 
-.card-text{
+.card__text{
     text-align: center;
 }
 

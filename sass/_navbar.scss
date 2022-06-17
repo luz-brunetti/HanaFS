@@ -1,0 +1,41 @@
+.navbar {
+    border-top: solid #b8b8b8 2px;
+    border-bottom: solid #b8b8b8 2px;
+    &__logo{
+        width: 315px;
+    }
+    .nav-link:hover{
+        color:#93af84;
+    }
+    ul{
+        font-size: 15px;
+        padding: 10px 0px;
+        font-weight: 500;
+        margin: 5px
+    }
+    li > a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+    li > a::after {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0;
+        top: 5px;
+        background: transparent;
+        transition: all 0.3s;
+    }
+    
+    li > a:hover::after, li > a.active-nav::after {
+        width: 100%;
+        background: #93af84;
+        font-size: 20px;
+    }
+    a:any-link{
+        text-decoration: none;
+        color: black;
+    }
+}
