@@ -1,11 +1,13 @@
 .card{
     &__title{
-        text-transform: uppercase;
+        @include texto;
         letter-spacing:2px;
         word-spacing: 3px;
-        text-align: center;
+        color: map-get($colores, "lavander")
     }
     &__text{
         text-align: center;
+        line-height: 24px;
+        font-size: 1rem;
     }
 }

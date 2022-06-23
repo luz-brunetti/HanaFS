@@ -5,7 +5,7 @@
         width: 315px;
     }
     .nav-link:hover{
-        color:#93af84;
+        color:map-get($colores, "sage")
     }
     ul{
         font-size: 15px;
@@ -31,7 +31,7 @@
     
     li > a:hover::after, li > a.active-nav::after {
         width: 100%;
-        background: #93af84;
+        background: map-get($colores, "sage");
         font-size: 20px;
     }
     a:any-link{

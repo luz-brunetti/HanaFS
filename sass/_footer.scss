@@ -1,5 +1,5 @@
 .footer{
-    background-color:#3f3f3f;
+    background-color:map-get($colores, "steelgrey");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,11 +17,14 @@
         padding: 10px 0px;
     }
     &__text{
-        color: white;
+        color:map-get($colores, "white");
         text-transform: uppercase;
         font-size: 1rem;
         margin-bottom: 0px;
         word-spacing: 2px;
         letter-spacing: 2px;
+        @media screen and (max-width: 768px) {
+            font-size: 0.6rem;
+        }
     }
 }
